@@ -1,0 +1,12 @@
+<div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+
+    <a *ngFor="let productos of productoService.productosFiltrado" [routerLink]="['/item', productos.cod ]" class="animate__animated animate__fadeIn rk-item ae-masonry__item">
+        <img src="assets/productos/{{ productos.url }}.jpg" alt="">
+        <div class="item-meta">
+            <h2>{{productos.titulo}}</h2>
+            <p>{{productos.categoria}}</p>
+        </div>
+    </a>
+
+
+</div>
